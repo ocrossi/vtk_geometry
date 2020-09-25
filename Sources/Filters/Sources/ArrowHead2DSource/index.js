@@ -93,7 +93,6 @@ function istheanswertime(model) {
 	const ret = {points, edges};
 		//ret.push(points);
 		//ret.push(edges);
-	console.log("lol ta mere");
 	return ret;
 	
 }
@@ -134,7 +133,6 @@ function vtk4pointsArrowHead(publicAPI, model) {
 */
 
 	const obj = istheanswertime(model);
-	console.log("putain d async");
    vtkMatrixBuilder
       .buildFromRadian()
       .translate(...model.center)
@@ -209,7 +207,6 @@ function vtkArrowHead2DSource(publicAPI, model) {
     vtkTriangleSource(publicAPI, model);
     console.log('we good');
   } else if (model.shapeNb === 4) {
-		console.log("LOLLLOOLLOLOL");
     vtk4pointsArrowHead(publicAPI, model);
 	} else if (model.shapeNb === 6) {
     vtk6pointsArrowHead(publicAPI, model);
